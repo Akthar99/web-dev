@@ -1,0 +1,115 @@
+body {
+    background-color: rgb(228, 243, 255);
+    height: 1200px;
+}
+
+/*  Navbar   */
+/* creating a responcive navbar */
+/* main nav-bar div */
+.nav-barr {
+    height: 55px;
+    width: 100%;
+    background-color: rgb(30, 24, 24);
+    color: rgb(159, 159, 159);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding-top: 8px;
+}
+
+/* navbar links */
+.nav_link {
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(159, 159, 159);
+    cursor: pointer;
+    position: right;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.nav_link:hover {
+    color: rgb(230, 230, 230);
+    transition: all 0.3s;
+}
+.nav_link:not(:hover) {
+    transition: all 0.3s;
+}
+/* when user hover the navbar link this div content will be visible */
+/* drop-down content  */
+.hidden-service-tag {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    height: 340px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 12px;
+}
+
+/* drop-down content for about */
+.hidden-about-tag {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    height: 340px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 12px;
+}
+/* navigation button  */
+#nav-button {
+    background-color: rgb(30, 24, 24);
+    border: none;
+    color: rgb(177, 177, 177);
+    padding: 0;
+    margin: 0;
+}
+
+/* navbar toggle iffect  */
+#nav-button:hover {
+    color: #eae9e9;
+    transition: all 0.3s;
+}
+#nav-button:not(:hover) {
+    transition: all 0.3s;
+}
+
+/* i created a class called .conc for the navbar togle option */
+/* inline the all navlink content */
+.conc {
+    display: inline;
+}
+/* conc service padding to zero */
+#conc-service {
+    padding: 0;
+    margin: 0;
+}
+/* when user hover .hidden-service-tag will be visible to the user */
+/* service tag */
+#conc-service:hover .hidden-service-tag {
+    display: block;
+}
+/* conc about padding to zero */
+#conc-about-tag {
+    padding: o;
+    margin: 0;
+}
+
+/* about tag */
+#conc-about:hover .hidden-about-tag {
+    display: block;
+}
+
+/* sub nav link */
+/* this is the same as nav-link but different font size */
+.sub-nav_link {
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(123, 123, 123);
+    cursor: pointer;
+    position: right;
+    margin-right: 40px;
+    margin-left: 40px;
+}
